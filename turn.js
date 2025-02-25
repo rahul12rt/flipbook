@@ -108,7 +108,7 @@ var has3d,
 
 	// Number of pages in the DOM, minimum value: 6
 
-	pagesInDOM = 6,
+	pagesInDOM = 12,
 	
 	pagePosition = {0: {top: 0, left: 0, right: 'auto', bottom: 'auto'},
 					1: {top: 0, right: 0, left: 'auto', bottom: 'auto'}},
@@ -1606,7 +1606,7 @@ flipMethods = {
 
 		if (folding) {
 			if (bool) {
-				if (!data.fpage.children()[data.ashadow? '1' : '0']) {
+				if (!data.fpage.children()[data.ashadow? '0' : '0']) {
 					flipMethods.setData.call(this, {backParent: folding.parent()});
 					data.fpage.prepend(folding);
 				}
